@@ -634,6 +634,39 @@ img {
   color: var(--text-color);
 }
 
+/*=============== Airticle container ===============*/
+.article__heading{
+  font-size: var(--h2-font-size);
+  margin-bottom: 1rem;
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  text-align: center;
+}
+
+.articles__headings{
+  font-size: var(--h3-font-size);
+  margin-bottom: .5rem;
+  color: var(--white-color);
+  font-weight: var(--font-semi-bold);
+  text-align: center;
+}
+
+.article__text{
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+}
+
+.article__text > li> strong {
+  color: var(--white-color);
+}
+
+/*=============== youtube ===============*/
+#youtube {
+  display: block;
+  margin: 0 auto; /* Centers the iframe horizontally */
+  max-width: 100%; /* Ensures responsiveness */
+  padding: 20px 0; /* Adds some spacing around the iframe */
+}
 
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar{
@@ -699,7 +732,8 @@ img {
   .projects__container,
   .services__container,
   .experience__container,
-  .contact__container{
+  .contact__container,
+  .article__container{
     grid-template-columns: 380px;
     justify-content: center;
   }
@@ -719,7 +753,8 @@ img {
     grid-template-columns: repeat(2, 350px);
   }
 
-  .experience__container{
+  .experience__container,
+  .article__container{
     grid-template-columns: initial;
   }
 
@@ -843,7 +878,8 @@ img {
     top: -1.5rem;
   }
 
-  .experience__container{
+  .experience__container,
+  .article__container{
     row-gap: 4rem;
   }
 
